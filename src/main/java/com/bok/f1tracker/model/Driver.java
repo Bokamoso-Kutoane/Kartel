@@ -1,8 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.bok.f1tracker.model;
+import com.google.gson.annotations.SerializedName;
 
 /**
  *
@@ -11,7 +8,9 @@ package com.bok.f1tracker.model;
 public class Driver {
     
     private int id;
+    @SerializedName("full_name")
     private String name;
+    @SerializedName("driver_number")
     private int number;
     
     public Driver(int id, String name, int number) {

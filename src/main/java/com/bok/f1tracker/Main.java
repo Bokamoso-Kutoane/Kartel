@@ -23,5 +23,7 @@ public class Main {
         System.out.println("Driver: " + maxWin.getDriver().getName());
         System.out.println("Team: " + maxWin.getTeam().getName());
         System.out.println("Points: " + maxWin.getPoints());
+        
+        com.bok.f1tracker.api.OpenF1Client.pingAPI();
     }
 }
